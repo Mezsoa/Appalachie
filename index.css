@@ -49,10 +49,20 @@ header {
     font-weight: bold;
 }
 
+.navbar .links a {
+    color: burlywood;
+}
+.navbar .links a:hover {
+    scale: 1.05;
+    color: orange;
+}
+
 .navbar .links {
     display: flex;
     gap: 2.5rem;
-    width: 315px;
+    margin-top: 1590px;
+    margin-right: 80px;
+    
 }
 
 .navbar .toggle_btn {
