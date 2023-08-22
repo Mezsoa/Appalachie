@@ -1,0 +1,272 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    height: 100vh;    
+    background-color: #000;
+    background-image: url('./background.img/background.Norway-trolltunga.img2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(24, 27, 18);
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: orange;
+}
+
+/* Header */
+header {
+    position: relative;
+    padding: 0 1rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar1 {
+    width: 100%;
+    height: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: rgba(231, 231, 231, 0.363);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.navbar2 {
+    width: 100%;
+    height: 20px;
+    max-width: 380px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+    background: rgba(75, 74, 74, 0.164);
+    backdrop-filter: blur(1px); /* Apply a backdrop blur */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.shop_links {
+    max-height: 5vh;
+    overflow: auto;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar1 .shop_links a {
+color: black;
+}
+.navbar2 .links a {
+    color: rgba(228, 228, 228, 0.712);
+}
+.navbar1 .shop_links a:hover {
+    scale: 1.05;
+    color: rgba(255, 211, 161);
+}
+.navbar2 .links a:hover {
+    scale: 1.05;
+    color: rgb(255, 211, 161)
+}
+
+
+
+
+
+
+
+
+.navbar2 .links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar1 .shop_links {
+   display: flex;
+   gap: 2.5rem;
+}
+
+.navbar .toggle_btn {
+    color: rgba(47, 48, 46, 0.493);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+background-color: rgba(0, 0, 0, 0.253);
+color: darkgrey;
+padding: 0.5rem 1rem;
+border: none;
+outline: none;
+border-radius: 20px;
+font-family: monospace, fantasy;
+font-size: 0.7rem;
+font-weight: bold;
+cursor: pointer;
+transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: whitesmoke;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/* DROPDOW MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 50px;
+    height: 0;
+    width: 300px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.dropdown_menu.open {
+    height: auto;
+}
+
+/* DROPDOWN MENU-FONT-SIZE=TEXT-SIZE*/
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+h2 {
+    color: rgba(24, 11, 3, 0.795);
+    font-size: 27px;
+    font-family: monospace;
+}
+
+h3 {
+    color: rgba(26, 14, 6, 0.753);
+    font-size: 16px;
+    font-family: monospace;
+}
+
+p   {
+    color: rgba(17, 9, 4, 0.753);
+    font-size: 21px;
+    font-family: Verdana, fantasy, Geneva, Tahoma, sans-serif;
+}
+
+
+.author {
+margin-left: 41rem;
+font-size: 16px;
+}
+
+  /* Style for the blurred window */
+  .blurred-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width:900px;
+    padding: 20px;
+    background: rgba(231, 231, 231, 0.363);
+    backdrop-filter: blur(15px); /* Apply a backdrop blur */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Style for the scrollable content */
+  .content-container {
+    max-height: 60vh; /* Set a maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .navbar2 .links,
+    .navbar .action_btn {
+        display: none;
+    }
+    .navbar1 {
+        display: none;
+    }
+    .navbar2 {
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+ .dropdown_menu{
+    left: 2rem;
+    width: unset;
+ }
+}
+
