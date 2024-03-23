@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f7f7;
+    background-image: url('./background.img/background.Snow-field.img4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(24, 27, 18);
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: rgba(228, 228, 228, 0.712);
+}
+
+/* Header */
+header {
+    position: relative;
+    padding: 0 1rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar1 {
+    width: auto;
+    height: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.151);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    z-index: 5;
+}
+
+.navbar2 {
+    width: 100%;
+    height: 20px;
+    max-width: 380px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.151);
+    backdrop-filter: blur(10px); /* Apply a backdrop blur */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
+    z-index: 5;
+}
+
+.shop_links {
+    max-height: 5vh;
+    overflow: auto;
+}
+ 
+
+.navbar .logo a {
+    font-size: 0.7rem;
+    font-weight: bold;
+    position: fixed;
+    margin: 0 auto;
+    top: 1.5%;
+    width: auto;
+    border: none;
+    outline: none;
+    color: darkgrey;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.253);
+    backdrop-filter: blur(2px); /* Apply a backdrop blur */
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 4;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.navbar .logo a:hover {
+    scale: 1.05;
+    color: whitesmoke;
+}
+
+.navbar .logo a:active {
+    scale: 0.95;
+}
+
+.navbar1 .shop_links a {
+color: rgba(228, 228, 228, 0.712);
+}
+.navbar2 .links a {
+    color: rgba(228, 228, 228, 0.712);
+}
+.navbar1 .shop_links a:hover {
+    scale: 1.05;
+    color: rgba(255, 211, 161);
+}
+.navbar2 .links a:hover {
+    scale: 1.05;
+    color: rgb(255, 211, 161);
+}
+
+
+
+
+
+
+
+
+.navbar2 .links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar1 .shop_links {
+   display: flex;
+   gap: 2.5rem;
+}
+
+.navbar .toggle_btn {
+    color: rgba(47, 48, 46, 0.493);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+background-color: rgba(0, 0, 0, 0.253);
+color: darkgrey;
+padding: 0.5rem 1rem;
+border: none;
+outline: none;
+border-radius: 20px;
+font-family: monospace, fantasy;
+font-size: 0.7rem;
+font-weight: bold;
+cursor: pointer;
+transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: whitesmoke;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/* DROPDOW MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 50px;
+    height: 0;
+    width: 300px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.dropdown_menu.open {
+    height: auto;
+}
+
+/* DROPDOWN MENU-FONT-SIZE=TEXT-SIZE*/
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* Padding/margin for the page */
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+/* product image change */
+
+#product1 {
+    text-align: center;
+
+}
+
+.pro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#product1 .pro {
+    
+    height: 20%;
+    width: 20%;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    background: #cfc7ba77;
+    backdrop-filter: blur(5px);
+    margin: 60px 12px;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#product1 .pro img {
+    width: 100%;
+    height: 15vh;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: antiquewhite;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #f7f7f7;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgba(243, 181, 25);
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1cb958;
+}
+
+
+#product1 .pro .color-cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e3ece571;
+    color: #25b35d;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .navbar2 .links,
+    .navbar .action_btn {
+        display: none;
+    }
+    .navbar1 {
+        display: none;
+    }
+    .navbar2 {
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+ .dropdown_menu{
+    left: 2rem;
+    width: unset;
+ }
+}
