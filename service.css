@@ -6,9 +6,10 @@
 }
 /* Background pictures, setting hight and width */
 body {
-    height: 100vh; 
+    height: 300vh; 
     background-color: #000;
-    background-image: url('background.img/Service.background');
+    background-image: url('background.img/signpost.jpg');
+    background-attachment: fixed, scroll;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
