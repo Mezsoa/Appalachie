@@ -7,12 +7,13 @@
 
 
 body {
-    height: 100vh;    
+    height: 400vh;    
     background-color: #000;
-    background-image: url('https://images.unsplash.com/photo-1682687218608-5e2522b04673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1975&q=80');
+    background-image: url('./background.img/Lonley_mountain.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
 }
 
 li {
@@ -92,13 +93,13 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 .picture-navbar {
   width: 100%;
   height: 35vh;
-  position: fixed;
+  position: absolute;
   max-width: 2850px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  top: 57rem;
 }
 
 .shop_links {
@@ -201,7 +202,7 @@ transition: scale 0.2 ease;
 
 /* WELCOME */
 section#welcome {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -478,7 +479,7 @@ p {
     font-size: 10px;
     padding: 8px 12px;
     position: absolute;
-    bottom: -29px;
+    bottom: -31px;
   }
 
   /* Number text slide2 (1/4) */
@@ -487,8 +488,8 @@ p {
     font-size: 10px;
     padding: 8px 12px;
     position: absolute;
-    bottom: -28px;
-    left: -2rem;
+    bottom: -26px;
+    left: 30%;
   }
 
   /* Number text slide3 (1/6) */
@@ -497,8 +498,8 @@ p {
     font-size: 10px;
     padding: 8px 12px;
     position: absolute;
-    bottom: -30px;
-    left: 2rem;
+    bottom: -27px;
+    left: 56.5%;
   }
 
   /* Number text slide4 (1/5) */
@@ -507,8 +508,8 @@ p {
     font-size: 10px;
     padding: 8px 12px;
     position: absolute;
-    bottom: -29px;
-    left: 1rem;
+    bottom: -28px;
+    left: 82%;
   }
   
   /* The dots/bullets/indicators */
