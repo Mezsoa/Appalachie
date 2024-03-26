@@ -8,12 +8,11 @@
 body {
     height: 300vh;
     background-color: #f8f7f7;
-    background-image: url('./background.img/Packing_gear_list.jpg');
+    background-image: url('./background.img/background.Snow-field.img4.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed, scroll;
     background-repeat: no-repeat;
-    overflow-x: hidden;
 }
 li {
     list-style: none;
@@ -94,7 +93,7 @@ header {
  
 
 .navbar .logo a {
-    font-size: 1.7rem;
+    font-size: 0.7rem;
     font-weight: bold;
     position: fixed;
     margin: 0 auto;
@@ -104,19 +103,18 @@ header {
     outline: none;
     color: darkgrey;
     padding: 0.5rem 1rem;
-    background: rgba(0, 0, 0, 0.41);
+    background: rgba(0, 0, 0, 0.253);
     backdrop-filter: blur(2px); /* Apply a backdrop blur */
     border-radius: 20px;
     overflow: hidden;
     z-index: 4;
     cursor: pointer;
     transition: scale 0.2 ease;
-    left: 8%;
 }
 
 .navbar .logo a:hover {
     scale: 1.05;
-    color: white;
+    color: whitesmoke;
 }
 
 .navbar .logo a:active {
@@ -170,13 +168,10 @@ border: none;
 outline: none;
 border-radius: 20px;
 font-family: monospace, fantasy;
-font-size: 0.9rem;
+font-size: 0.7rem;
 font-weight: bold;
 cursor: pointer;
 transition: scale 0.2 ease;
-position: fixed;
-right: 1%;
-top: 2.5%;
 }
 
 .action_btn:hover {
@@ -225,7 +220,16 @@ top: 2.5%;
 
 
 
+p {
+    position: relative;
+    left: 42%;
+}
 
+
+h2 {
+    position: relative;
+    left: 43.5%;
+}
 
 /* Padding/margin for the page 
 
@@ -240,42 +244,16 @@ top: 2.5%;
 
 /*Padding/margin product image change */
 
-
-p {
-    position: absolute;
-    color: #ddbb7c93;
-    top: 80px;
-}
-
-
-h2 {
-    position: absolute;
-    color: #ddbb7c93;
-    top: 20px;
-}
-
-
-
-
-
-
-
 .pro-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 35%;
-    padding-top: 5%;
-    padding-bottom: 5%;
     text-align: center;
     margin-left: 27%;
     margin-right: 27%;
     margin-bottom: 20%;
-    border: 1px solid rgba(10, 10, 9, 0.548);
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.527);
-    border-radius: 50px;
 }
 
 
@@ -285,11 +263,11 @@ h2 {
     width: 0;
     min-width: 200px;
     padding: 10px 12px;
-    border: 1px solid #00000078;
+    border: 1px solid #39363178;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
-    background: #a4a4a4b8;
+    background: #39363178;
     backdrop-filter: blur(5px);
     margin: 35px 12px;
     transition: 0.2s ease;
