@@ -8,7 +8,7 @@
 body {
     height: 300vh;
     background-color: #f8f7f7;
-    background-image: url('./background.img/muhammad-masood-4bGPldCL4I8-unsplash.jpg');
+    background-image: url('./background.img/Packing_gear_list.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed, scroll;
@@ -94,7 +94,7 @@ header {
  
 
 .navbar .logo a {
-    font-size: 0.7rem;
+    font-size: 1.7rem;
     font-weight: bold;
     position: fixed;
     margin: 0 auto;
@@ -104,18 +104,19 @@ header {
     outline: none;
     color: darkgrey;
     padding: 0.5rem 1rem;
-    background: rgba(0, 0, 0, 0.253);
+    background: rgba(0, 0, 0, 0.41);
     backdrop-filter: blur(2px); /* Apply a backdrop blur */
     border-radius: 20px;
     overflow: hidden;
     z-index: 4;
     cursor: pointer;
     transition: scale 0.2 ease;
+    left: 8%;
 }
 
 .navbar .logo a:hover {
     scale: 1.05;
-    color: whitesmoke;
+    color: white;
 }
 
 .navbar .logo a:active {
@@ -169,10 +170,13 @@ border: none;
 outline: none;
 border-radius: 20px;
 font-family: monospace, fantasy;
-font-size: 0.7rem;
+font-size: 0.9rem;
 font-weight: bold;
 cursor: pointer;
 transition: scale 0.2 ease;
+position: fixed;
+right: 1%;
+top: 2.5%;
 }
 
 .action_btn:hover {
@@ -240,14 +244,14 @@ transition: scale 0.2 ease;
 p {
     position: absolute;
     color: #ddbb7c93;
-    top: 8px;
+    top: 80px;
 }
 
 
 h2 {
     position: absolute;
     color: #ddbb7c93;
-    top: 2px;
+    top: 20px;
 }
 
 
